@@ -23,4 +23,40 @@ document.addEventListener('DOMContentLoaded', () => {
     Animation();
   });
   Animation();
+
+  // slider
+  $(function () {
+    $('.sliders').slick({
+      infinite: true,
+      arrows: false,
+      speed: 400,
+      slidesToShow: 4,
+      slidesToScroll: 2,
+      autoplay: true,
+      responsive: [
+        {
+          breakpoint: 1145,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 2,
+          }
+        },
+        {
+          breakpoint: 881,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 631,
+          settings: {
+            dots: false,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+  });
 });
