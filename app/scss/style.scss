@@ -37,6 +37,7 @@ h6 {
   height: 100vh;
   background: linear-gradient(180deg, #007aff 0%, #004fa5 58.8%, #003166 100%);
   font-family: sans-serif;
+  color: white;
 }
 .container {
   max-width: 1530px;
@@ -46,15 +47,15 @@ h6 {
 .menu {
   display: flex;
   padding-top: 20px;
-  color: white;
+  padding-bottom: 180px;
   &__list {
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
     width: 100%;
     &-item {
       position: relative;
       font-size: 20px;
+      margin-left: 60px;
     }
     &-btn {
       position: relative;
@@ -97,6 +98,24 @@ h6 {
 .dropdown--active {
   opacity: 1;
   visibility: visible;
+}
+.header__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__text {
+  max-width: 462px;
+}
+.top__title {
+  font-size: 22px;
+}
+.header__image {
+  max-width: 600px;
+  &-photo {
+    max-width: 600px;
+    border-radius: 4px;
+  }
 }
 
 @import "media";
