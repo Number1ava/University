@@ -12,6 +12,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  font-family: sans-serif;
 }
 a {
   text-decoration: none;
@@ -36,7 +37,6 @@ h6 {
 .header {
   height: 100vh;
   background: linear-gradient(180deg, #007aff 0%, #004fa5 58.8%, #003166 100%);
-  font-family: sans-serif;
   color: white;
 }
 .container {
@@ -115,6 +115,32 @@ h6 {
   &-photo {
     max-width: 600px;
     border-radius: 4px;
+  }
+}
+.counter {
+  min-height: 264px;
+  padding: 100px 0;
+  background-color: #26335d;
+  color: white;
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 920px;
+    margin: 0 auto;
+    &-item {
+      max-width: 280px;
+    }
+    &-count {
+      font-size: 40px;
+      font-weight: bold;
+      text-align: center;
+      color: #2d9cdb;
+    }
+    &-text {
+      font-size: 17px;
+      font-weight: bold;
+    }
   }
 }
 
