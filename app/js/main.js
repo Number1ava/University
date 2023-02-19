@@ -1,19 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const menuBtns = document.querySelectorAll('.menu__list-btn');
-  menuBtns.forEach(el => {
-    el.addEventListener('click', (e) => {
-      let currentBtn = e.currentTarget;
-      let drop = currentBtn.closest('.menu__list-item').querySelector('.dropdown');
-      drop.classList.toggle('dropdown--active');
-    });
-  });
 
   // Jquery - counter
   let Animation = function () {
     let hFrom = $(window).scrollTop();
     let hTo = $(window).scrollTop() + ($(window).height() / 1);
     if ($(".counter").offset().top > hFrom && $(".counter").offset().top < hTo) {
-      $('.counter__main span').delay(400).spincrement({
+      $('.counter__main span').delay(300).spincrement({
         thousandSeparator: "",
         duration: 3000
       });
@@ -59,4 +51,24 @@ document.addEventListener('DOMContentLoaded', () => {
       ]
     });
   });
+  // burger menu
+  function burgerMenu(selector) {
+    let menu = $(selector);
+    let button = menu.find(".burger__menu-button");
+    let overlay = menu.find('.burger__menu-overlay');
+    button.on("click", (e) => {
+      e.preventDefault();
+      toggleMenu();
+    });
+    overlay.on('click', () => toggleMenu());
+    function toggleMenu() {
+      menu.toggleClass('burger__menu-active');
+      if (menu.hasClass('burger__menu-active')) {
+        $('body').css('overflow', 'hidden');
+      } else {
+        $('body').css('overflow', 'visible');
+      }
+    }
+  }
+  burgerMenu(".burger__menu");
 });

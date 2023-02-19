@@ -35,7 +35,8 @@ h6 {
 }
 
 .header {
-  height: 100vh;
+  min-height: 100vh;
+  padding-bottom: 100px;
   background: linear-gradient(180deg, #007aff 0%, #004fa5 58.8%, #003166 100%);
   color: white;
 }
@@ -56,6 +57,7 @@ h6 {
   margin: 40px 0 80px 0;
   color: white;
 }
+
 .menu {
   display: flex;
   padding-top: 20px;
@@ -68,52 +70,20 @@ h6 {
       position: relative;
       font-size: 20px;
       margin-left: 60px;
-    }
-    &-btn {
-      position: relative;
-      border: none;
-      background-color: inherit;
-      color: white;
       cursor: pointer;
-      &::before {
-        content: "";
-        position: absolute;
-        left: -5px;
-        bottom: 5px;
-        width: 16px;
-        height: 18px;
-        background-image: url("../images/arrow__down.svg");
-        background-repeat: no-repeat;
-        background-size: contain;
-      }
     }
     &-logo {
       display: flex;
       align-items: center;
       font-size: 20px;
+      font-weight: bold;
     }
   }
 }
-.dropdown {
-  position: absolute;
-  left: 0;
-  top: 100%;
-  width: 132px;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-  &__item {
-    margin-top: 10px;
-    font-size: 18px;
-  }
-}
-.dropdown--active {
-  opacity: 1;
-  visibility: visible;
-}
+
 .header__main {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .header__text {
@@ -129,21 +99,25 @@ h6 {
     border-radius: 4px;
   }
 }
+
 main {
   background-color: #26335d;
 }
 .counter {
   min-height: 264px;
   padding: 100px 0;
-  color: white;
   &__main {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    max-width: 920px;
     margin: 0 auto;
     &-item {
-      max-width: 280px;
+      width: 240px;
+      min-height: 100px;
+      padding: 20px 10px;
+      text-align: center;
+      border-radius: 6px;
+      background-color: white;
     }
     &-count {
       font-size: 40px;

@@ -47,7 +47,7 @@ function images() {
 
 function scripts() {
   return src([
-    'node_modules/jquery/dist/jquery.min.js', 'app/js/main.js', 'app/js/jquery.spincrement.js', 'node_modules/slick-carousel/slick/slick.min.js',])
+    'node_modules/jquery/dist/jquery.min.js', 'app/js/main.js', 'app/js/jquery.spincrement.js', 'node_modules/slick-carousel/slick/slick.min.js', 'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'])
     .pipe(concat('main.min.js'))
     .pipe(uglify())
     .pipe(dest('app/js'))
@@ -55,7 +55,7 @@ function scripts() {
 }
 
 function styles() {
-  return src(['app/scss/style.scss', "node_modules/normalize.css/normalize.css", 'node_modules/slick-carousel/slick/slick.css'])
+  return src(['app/scss/style.scss', "node_modules/normalize.css/normalize.css", 'node_modules/slick-carousel/slick/slick.css', "node_modules/bootstrap/scss/bootstrap.scss"])
     .pipe(scss({ outputStyle: 'compressed' }))
     .pipe(concat('style.min.css'))
     .pipe(autoprefixer({

@@ -11,65 +11,55 @@
 <body>
   <header class="header">
     <div class="container__header">
-      <nav class="menu">
-        <ul class="menu__list">
-          <a class="menu__list-logo" href="index.html"><img src="images/1QSTK logo.png" alt="image">O'zDJTSU</a>
-          <li class="menu__list-item"><a href="#" class="menu__list-link">Новости</a></li>
-          <li class="menu__list-item">
-            <button class="menu__list-btn">Расписание</button>
+      <div class="burger__menu">
+        <a class="burger__menu-button" href="#">
+          <span class="burger__menu-lines"></span>
+        </a>
+        <nav class="menu">
+          <ul class="menu__list">
+            <a class="menu__list-logo" href="index.html"><img src="images/1QSTK logo.png" alt="image">O'zDJTSU</a>
+            <li class="menu__list-item"><a href="#" class="menu__list-link">Новости</a></li>
             <div class="dropdown">
-              <ul class="dropdown__list">
-                <li class="dropdown__item">
-                  <a href="#" class="dropdown__link">Первый курс</a>
-                </li>
-                <li class="dropdown__item">
-                  <a href="#" class="dropdown__link">Второй курс</a>
-                </li>
-                <li class="dropdown__item">
-                  <a href="#" class="dropdown__link">Третий курс</a>
-                </li>
-                <li class="dropdown__item">
-                  <a href="#" class="dropdown__link">Четвертый курс</a>
-                </li>
+              <li class="menu__list-item dropdown-toggle dropdown" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Расписание
+              </li>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">Первый курс</a></li>
+                <li><a class="dropdown-item" href="#">Второй курс</a></li>
+                <li><a class="dropdown-item" href="#">Третий курс</a></li>
+                <li><a class="dropdown-item" href="#">Четвертый курс</a></li>
               </ul>
             </div>
-          </li>
-          <li class="menu__list-item">
-            <button class="menu__list-btn">Руководство</button>
             <div class="dropdown">
-              <ul class="dropdown__list">
-                <li class="dropdown__item">
-                  <a href="#" class="dropdown__link">Министерство</a>
-                </li>
-                <li class="dropdown__item">
-                  <a href="#" class="dropdown__link">Ректорат</a>
-                </li>
-                <li class="dropdown__item">
-                  <a href="#" class="dropdown__link">Деканат</a>
-                </li>
-                <li class="dropdown__item">
-                  <a href="#" class="dropdown__link">Кафедра</a>
-                </li>
+              <li class="menu__list-item dropdown-toggle dropdown" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Руководство
+              </li>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item " href="#">Министерство</a></li>
+                <li><a class="dropdown-item " href="#">Ректорат</a></li>
+                <li><a class="dropdown-item " href="#">Деканат</a></li>
+                <li><a class="dropdown-item " href="#">Кафедра</a></li>
               </ul>
             </div>
-          </li>
-          <li class="menu__list-item"><a href="#" class="menu__list-link">Спорт</a></li>
-          <li class="menu__list-item">
-            <button class="menu__list-btn">Библеотека</button>
+            <li class="menu__list-item"><a href="#" class="menu__list-link">Спорт</a></li>
             <div class="dropdown">
-              <ul class="dropdown__list">
-                <li class="dropdown__item">
-                  <a href="#" class="dropdown__link">Фото и Видео</a>
-                </li>
-                <li class="dropdown__item">
-                  <a href="#" class="dropdown__link">Книги</a>
-                </li>
+              <li class="menu__list-item dropdown-toggle dropdown" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Библиотека
+              </li>
+              <ul class="dropdown-menu dropdown-menu-dark ">
+                <li><a class="dropdown-item" href=" #">Фото и Видео</a></li>
+                <li><a class="dropdown-item" href=" #">Книги</a></li>
               </ul>
             </div>
-          </li>
-          <li class="menu__list-item"><a href="#" class="menu__list-link">Духовность</a></li>
-        </ul>
-      </nav>
+            <li class="menu__list-item"><a href="#" class="menu__list-link">Духовность</a></li>
+          </ul>
+        </nav>
+        <div class="burger__menu-overlay"></div>
+      </div>
+
       <div class="header__main">
         <div class="header__text">
           <h3 class="top__title">Добро Пожаловать!</h3>
@@ -96,18 +86,18 @@
           </div>
 
           <div class="counter__main-item">
-            <div class="counter__main-count"><span>7</span></div>
-            <div class="counter__main-text">Сотрудничество с органзациями</div>
+            <div class="counter__main-count"><span>4</span></div>
+            <div class="counter__main-text">Учебный курс</div>
           </div>
 
           <div class="counter__main-item">
-            <div class="counter__main-count"><span>4</span></div>
-            <div class="counter__main-text">Курса</div>
+            <div class="counter__main-count"><span>7</span></div>
+            <div class="counter__main-text">Сотрудничество</div>
           </div>
         </div>
       </div>
     </section>
-    <section class="sports">
+    <!-- <section class="sports">
       <div class="container">
         <h2 class="sports__title section__title">Спортивные виды кафедры</h2>
         <div class="card__box">
@@ -241,9 +231,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
   </main>
-  <footer class="footer">
+  <!-- <footer class="footer">
     <div class="container">
       <div class="footer__wrapper">
         <div class="footer__content1">
@@ -265,7 +255,7 @@
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
   <script src="js/main.min.js"></script>
   <script src="js/jquery.spincrement.js"></script>
 </body>
