@@ -107,7 +107,7 @@ main {
 }
 .counter {
   min-height: 264px;
-  padding: 100px 0;
+  padding: 100px 0 40px 0px;
   &__main {
     display: flex;
     justify-content: space-around;
@@ -136,6 +136,7 @@ main {
 
 .sports {
   min-height: 600px;
+  padding-bottom: 50px;
 }
 .card__box {
   display: flex;
