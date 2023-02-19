@@ -1,4 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
+  $(window).on('load', function () {
+    $('.loader__wrap').delay(800).fadeOut('slow');
+    $("html,body").addClass("hidden");
+    setTimeout(function () {
+      $("html,body").removeClass("hidden");
+    }, 900);
+  });
 
   // Jquery - counter
   let Animation = function () {
