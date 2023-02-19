@@ -36,7 +36,7 @@ h6 {
 
 .header {
   min-height: 100vh;
-  padding-bottom: 100px;
+  padding-bottom: 40px;
   background: linear-gradient(180deg, #007aff 0%, #004fa5 58.8%, #003166 100%);
   color: white;
 }
@@ -80,7 +80,9 @@ h6 {
     }
   }
 }
-
+.header__TopImage {
+  display: none;
+}
 .header__main {
   display: flex;
   justify-content: space-around;

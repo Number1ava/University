@@ -22,7 +22,7 @@
   .header {
     &__main {
       text-align: center;
-      padding-top: 80px;
+      padding-top: 100px;
       flex-direction: column;
     }
     &__text {
@@ -167,10 +167,11 @@
 @media (max-width: 768px) {
   .header {
     &__main {
-      padding-top: 140px;
+      padding-top: 40px;
     }
     &__text {
       max-width: 80%;
+      margin-bottom: 40px;
     }
     .top__title {
       font-size: 24px;
@@ -179,21 +180,28 @@
       font-size: 26px;
     }
   }
+  .header__TopImage {
+    display: block;
+    margin-bottom: 20px;
+    &-photo {
+      max-width: 160px;
+      max-height: 160px;
+    }
+  }
   .counter {
     &__main {
       justify-content: space-evenly;
     }
   }
 }
-@media (max-width: 600px) {
-  .header {
-    &__text {
-      margin-bottom: 100px;
-    }
-  }
-}
 
 @media (max-width: 641px) {
+  .header {
+    &__text {
+      max-width: 90%;
+    }
+  }
+
   .counter {
     &__main {
       max-width: 60%;
@@ -213,12 +221,48 @@
   }
 }
 @media (max-width: 480px) {
+  .header__TopImage {
+    margin-bottom: 20px;
+    &-photo {
+      max-width: 140px;
+      max-height: 140px;
+    }
+  }
+  .header {
+    &__main {
+      padding-top: 100px;
+    }
+    &__text {
+      max-width: 100%;
+      margin-bottom: 100px;
+    }
+    .top__title {
+      font-size: 22px;
+    }
+    .sub__title {
+      font-size: 26px;
+    }
+  }
+
   .counter {
     &__main {
       max-width: 80%;
       &-count {
         font-size: 34px;
       }
+    }
+  }
+}
+@media (max-width: 380px) {
+  .header {
+    &__main {
+      padding-top: 120px;
+    }
+    .top__title {
+      font-size: 20px;
+    }
+    .sub__title {
+      font-size: 22px;
     }
   }
 }

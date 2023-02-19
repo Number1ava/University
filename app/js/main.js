@@ -5,9 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let hFrom = $(window).scrollTop();
     let hTo = $(window).scrollTop() + ($(window).height() / 1);
     if ($(".counter").offset().top > hFrom && $(".counter").offset().top < hTo) {
-      $('.counter__main span').delay(300).spincrement({
+      $('.counter__main span').delay(500).spincrement({
         thousandSeparator: "",
-        duration: 3000
+        duration: 2500
       });
     }
   };
