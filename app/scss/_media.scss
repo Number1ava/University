@@ -275,6 +275,9 @@
       }
     }
   }
+  .teachers__center {
+    text-align: center;
+  }
 }
 @media (max-width: 380px) {
   .header {
@@ -291,5 +294,8 @@
 
   .card {
     width: 260px;
+  }
+  .teachers__center {
+    font-size: 29px;
   }
 }

@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     $('.sliders').slick({
       infinite: true,
       arrows: false,
-      speed: 400,
+      speed: 300,
       slidesToShow: 4,
       slidesToScroll: 2,
       autoplay: true,
@@ -41,11 +41,27 @@ document.addEventListener('DOMContentLoaded', () => {
           }
         },
         {
-          breakpoint: 631,
+          breakpoint: 641,
           settings: {
             dots: false,
+            centerMode: true,
             slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            centerPadding: '120px',
+          }
+        },
+        {
+          breakpoint: 552,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 481,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
           }
         }
       ]
