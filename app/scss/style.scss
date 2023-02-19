@@ -72,6 +72,9 @@ h6 {
       margin-left: 60px;
       cursor: pointer;
     }
+    &-item:focus {
+      outline: 1px solid black;
+    }
     &-logo {
       display: flex;
       align-items: center;
