@@ -98,7 +98,7 @@ h6 {
 
 .logo {
   font-weight: 700;
-  font-size: 22px;
+  font-size: 24px;
 }
 
 .nav {
@@ -121,7 +121,7 @@ h6 {
 .nav__item {
   position: relative;
   padding: 15px 0;
-  font-size: 19px;
+  font-size: 20px;
 }
 
 .nav__link--drop::after {
@@ -531,6 +531,35 @@ button {
 // figure.html ========================================
 .figure {
   min-height: 600px;
-  padding: 40px 0;
+  padding: 20px 0;
+  &__title {
+    padding-top: 30px;
+  }
+  &__text {
+    margin-bottom: 80px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 138.52%;
+    text-align: justify;
+  }
+  &__main {
+    .topBlock__images {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+      min-height: 400px;
+    }
+    .topBlock__images > img {
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    .downBlock__images > img {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 40px;
+    }
+  }
 }
+
 @import "media";
