@@ -115,6 +115,10 @@
   .burger {
     display: block;
   }
+  .burger span {
+    height: 3px;
+    background-color: #fff;
+  }
 
   .mobile-back {
     display: block;
@@ -253,6 +257,11 @@
   .nav {
     width: 45%;
   }
+  .nav__link,
+  .dropdown-submenu__list-item a,
+  .dropdown-list__link {
+    padding: 10px 30px;
+  }
 
   .header {
     &__text {
@@ -298,6 +307,7 @@
   .nav__item {
     font-size: 18px;
   }
+
   .header {
     &__main {
       padding-top: 100px;
@@ -330,11 +340,7 @@
   .nav {
     width: 60%;
   }
-  .nav__link,
-  .dropdown-submenu__list-item a,
-  .dropdown-list__link {
-    padding: 15px 30px;
-  }
+
   .header {
     &__main {
       padding-top: 120px;

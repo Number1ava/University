@@ -106,6 +106,7 @@ h6 {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 200px !important;
+  padding-top: 20px;
 }
 .nav__list {
   display: flex;
@@ -148,7 +149,7 @@ h6 {
   transition: all 0.3s;
   opacity: 0;
   visibility: hidden;
-  width: 220px;
+  width: 240px;
 }
 
 .dropdown-submenu {
@@ -210,8 +211,8 @@ h6 {
   left: 0;
   top: 0;
   width: 100%;
-  height: 2px;
-  background-color: #000;
+  height: 3px;
+  background-color: #fff;
 }
 
 .burger::after {
@@ -448,7 +449,7 @@ button {
     color: inherit;
   }
 }
-// rector.html =============================
+// rector.html =======================================
 .managers {
   padding: 40px 0;
   min-height: 600px;
@@ -527,4 +528,9 @@ button {
   }
 }
 
+// figure.html ========================================
+.figure {
+  min-height: 600px;
+  padding: 40px 0;
+}
 @import "media";
