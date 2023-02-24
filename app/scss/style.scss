@@ -456,7 +456,7 @@ button {
 }
 .managers__title {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   color: #004fa5;
   font-size: 30px;
 }
@@ -529,18 +529,18 @@ button {
 }
 
 // figure.html ========================================
+.main__Bigtext {
+  margin-bottom: 80px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 138.52%;
+  text-align: justify;
+}
 .figure {
   min-height: 600px;
   padding: 20px 0;
   &__title {
     padding-top: 30px;
-  }
-  &__text {
-    margin-bottom: 80px;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 138.52%;
-    text-align: justify;
   }
   &__main {
     .topBlock__images {
@@ -562,4 +562,16 @@ button {
   }
 }
 
+// kafedra.html ============================
+.department {
+  text-align: center;
+
+  &__title {
+    padding-top: 60px;
+  }
+  &__logo {
+    max-width: 340px;
+    margin: auto auto 40px auto;
+  }
+}
 @import "media";
