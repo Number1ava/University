@@ -7,19 +7,21 @@
   }
   .header__image {
     &-photo {
-      max-width: 540px;
+      max-width: 440px;
     }
   }
 }
 @media (max-width: 1061px) {
+  .header__nav {
+    margin-bottom: 120px !important;
+  }
   .header {
     &__main {
       text-align: center;
-      padding-top: 100px;
-      flex-direction: column;
+      padding-top: 0px;
+      flex-direction: column-reverse;
     }
     &__text {
-      margin-bottom: 40px;
       max-width: 480px;
     }
     .top__title {
@@ -30,8 +32,9 @@
     }
     &__image {
       max-width: 100%;
+      margin-bottom: 40px;
       &-photo {
-        max-width: 100%;
+        max-width: 380px;
         border-radius: 4px;
       }
     }
@@ -67,17 +70,7 @@
   }
 }
 
-@media (max-width: 900px) {
-  .header {
-    &__image {
-      &-photo {
-        max-width: 90%;
-      }
-    }
-  }
-}
-
-@media (min-width: 800px) {
+@media (min-width: 876px) {
   .nav__link--drop:hover::after {
     transform: rotate(180deg);
     transition: all 0.3s;
@@ -96,7 +89,7 @@
       padding-top: 40px;
     }
     &__text {
-      max-width: 80%;
+      max-width: 70%;
       margin-bottom: 40px;
     }
     .top__title {
@@ -104,6 +97,12 @@
     }
     .sub__title {
       font-size: 26px;
+    }
+    &__image {
+      margin-bottom: 80px;
+      &-photo {
+        max-width: 420px;
+      }
     }
   }
 
@@ -265,8 +264,18 @@
 
   .header {
     &__text {
-      max-width: 90%;
+      max-width: 80%;
     }
+
+    &__image {
+      margin-bottom: 80px;
+      &-photo {
+        max-width: 380px;
+      }
+    }
+  }
+  .burger {
+    margin-bottom: 50px;
   }
 
   .counter {
@@ -307,20 +316,28 @@
   .nav__item {
     font-size: 18px;
   }
-
+  .burger {
+    margin-bottom: 120px;
+  }
   .header {
     &__main {
-      padding-top: 100px;
+      padding-top: 0px;
     }
     &__text {
       max-width: 100%;
-      margin-bottom: 100px;
+      margin-bottom: 0;
     }
     .top__title {
       font-size: 22px;
     }
     .sub__title {
-      font-size: 26px;
+      font-size: 25px;
+    }
+    &__image {
+      margin-bottom: 60px;
+      &-photo {
+        max-width: 280px;
+      }
     }
   }
 
@@ -342,14 +359,14 @@
   }
 
   .header {
-    &__main {
-      padding-top: 120px;
+    &__text {
+      max-width: 100%;
     }
     .top__title {
       font-size: 20px;
     }
     .sub__title {
-      font-size: 22px;
+      font-size: 23px;
     }
   }
 
