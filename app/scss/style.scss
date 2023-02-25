@@ -258,9 +258,9 @@ h6 {
   font-size: 22px;
 }
 .header__image {
-  max-width: 500px;
+  max-width: 480px;
   &-photo {
-    max-width: 480px;
+    max-width: 440px;
     border-radius: 4px;
   }
 }
@@ -529,13 +529,7 @@ button {
 }
 
 // figure.html ========================================
-.main__Bigtext {
-  margin-bottom: 80px;
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 138.52%;
-  text-align: justify;
-}
+
 .figure {
   min-height: 600px;
   padding: 20px 0;
@@ -561,11 +555,19 @@ button {
     }
   }
 }
+.main__Bigtext {
+  margin-bottom: 60px;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 138.52%;
+  text-align: justify;
+}
 
 // kafedra.html ============================
 .department {
+  min-height: 200px;
+  padding: 20px 0;
   text-align: center;
-
   &__title {
     padding-top: 60px;
   }
@@ -573,5 +575,78 @@ button {
     max-width: 340px;
     margin: auto auto 40px auto;
   }
+}
+
+// ministry.html =================================
+.ministry {
+  min-height: 400px;
+  padding: 40px 0;
+}
+.blocks:last-child {
+  margin-bottom: 0;
+}
+.blocks {
+  margin: 0 auto 40px auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  max-width: 80%;
+  min-height: 340px;
+  border-radius: 5px;
+  background: linear-gradient(180deg, #007aff 0%, #004fa5 58.8%, #003166 100%);
+  &__img {
+    max-width: 240px;
+    max-height: 290px;
+    border-radius: 5px;
+  }
+  &__descr {
+    max-width: 420px;
+    color: white;
+    & p {
+      font-size: 17px;
+      margin-top: 20px;
+    }
+
+    &-name {
+      font-weight: bold;
+      font-size: 20px;
+      margin-top: 20px;
+    }
+    &-contact {
+      margin-bottom: 100px;
+    }
+  }
+  &__modalBtn {
+    display: block;
+    width: 140px;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #004fa5;
+    background-color: white;
+  }
+}
+.modal-content {
+  padding: 20px;
+}
+
+.modal__body {
+  color: #000;
+  & p {
+    font-size: 19px;
+  }
+}
+.modal__title {
+  font-size: 22px;
+  margin: 20px 0;
+}
+.btn__modal {
+  width: 60px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  background-color: #004fa5;
 }
 @import "media";
