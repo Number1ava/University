@@ -68,8 +68,49 @@
   .card {
     margin-bottom: 60px;
   }
+  .figure {
+    &__main {
+      width: 100%;
+      .topBlock__images {
+        flex-wrap: nowrap;
+        & img:first-child {
+          margin-right: 20px;
+        }
+      }
+      .topBlock__images > img {
+        width: 55%;
+      }
+
+      .topBlock__images > img {
+        border-radius: 5px;
+        margin-bottom: 0px;
+      }
+      .downBlock__images > img {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 40px;
+      }
+    }
+  }
 }
 
+@media (max-width: 972px) {
+  .figure {
+    &__main {
+      .topBlock__images {
+        flex-direction: column;
+        align-items: center;
+        & img:first-child {
+          margin-right: 0px;
+          margin-bottom: 40px;
+        }
+      }
+      .topBlock__images > img {
+        width: 60%;
+      }
+    }
+  }
+}
 @media (min-width: 876px) {
   .nav__link--drop:hover::after {
     transform: rotate(180deg);
@@ -307,6 +348,9 @@
     padding: 20px 10px 10px 10px;
     margin-bottom: 40px;
   }
+  .main__Bigtext {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -353,6 +397,18 @@
   .teachers__center {
     text-align: center;
   }
+  .figure {
+    &__main {
+      .topBlock__images {
+        & img:first-child {
+          margin-bottom: 20px;
+        }
+      }
+      .topBlock__images > img {
+        width: 100%;
+      }
+    }
+  }
 }
 @media (max-width: 380px) {
   .nav {
@@ -376,5 +432,8 @@
   }
   .teachers__center {
     font-size: 29px;
+  }
+  .main__Bigtext {
+    font-size: 16px;
   }
 }
