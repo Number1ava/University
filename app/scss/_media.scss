@@ -110,6 +110,10 @@
       }
     }
   }
+  .blocks {
+    padding: 40px 10px;
+    max-width: 100%;
+  }
 }
 @media (min-width: 876px) {
   .nav__link--drop:hover::after {
@@ -294,6 +298,30 @@
   }
 }
 
+@media (max-width: 782px) {
+  .blocks {
+    padding: 40px 20px;
+    &__img {
+      max-width: 200px;
+      max-height: 250px;
+    }
+    &__descr {
+      max-width: 100%;
+      margin-left: 30px;
+      &-contact {
+        margin-bottom: 30px;
+      }
+      &-name {
+        font-size: 19px;
+      }
+    }
+  }
+  .modal__body {
+    & p {
+      font-size: 17px;
+    }
+  }
+}
 @media (max-width: 641px) {
   .nav {
     width: 45%;
@@ -351,8 +379,54 @@
   .main__Bigtext {
     font-size: 18px;
   }
+  .blocks {
+    flex-direction: column;
+    align-items: center;
+    max-width: 80%;
+    padding: 40px 20px;
+    &__img {
+      max-width: 260px;
+      max-height: 260px;
+      margin-bottom: 10px;
+    }
+    &__descr {
+      max-width: 100%;
+      margin-left: 0px;
+      text-align: center;
+      &-contact {
+        margin-bottom: 30px;
+      }
+      &-name {
+        font-size: 19px;
+      }
+    }
+    &__modalBtn {
+      display: inline-block;
+      width: 120px;
+      font-size: 15px;
+    }
+  }
+
+  .modal__body {
+    text-align: start;
+    & p {
+      font-size: 17px;
+    }
+  }
+  .modal__title {
+    font-size: 20px;
+  }
+  .btn__modal {
+    width: 50px;
+  }
 }
 
+@media (max-width: 578px) {
+  .modal-content {
+    margin: 0 auto;
+    max-width: 480px;
+  }
+}
 @media (max-width: 480px) {
   .nav {
     width: 55%;
@@ -409,6 +483,26 @@
       }
     }
   }
+  .blocks {
+    max-width: 100%;
+    padding: 30px 20px;
+    &__descr {
+      & p {
+        font-size: 16px;
+      }
+      &-name {
+        font-size: 18px;
+      }
+    }
+  }
+  .modal__body {
+    & p {
+      font-size: 16px;
+    }
+  }
+  .modal__title {
+    font-size: 18px;
+  }
 }
 @media (max-width: 380px) {
   .nav {
@@ -435,5 +529,29 @@
   }
   .main__Bigtext {
     font-size: 16px;
+  }
+  .blocks {
+    &__img {
+      max-width: 240px;
+      max-height: 220px;
+      margin-bottom: 0px;
+    }
+    &__descr {
+      & p {
+        font-size: 14.7px;
+      }
+      &-name {
+        font-size: 16px;
+      }
+    }
+    &__modalBtn {
+      display: inline-block;
+      width: 120px;
+      height: 35px;
+      font-size: 14px;
+    }
+  }
+  .modal__title {
+    font-size: 15.7px;
   }
 }
