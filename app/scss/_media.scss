@@ -92,6 +92,19 @@
       }
     }
   }
+  .managers__main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .secondCard {
+    width: 700px;
+    justify-content: start;
+    &__descr {
+      &--media {
+        max-width: 100%;
+      }
+    }
+  }
 }
 
 @media (max-width: 972px) {
@@ -321,6 +334,23 @@
       font-size: 17px;
     }
   }
+
+  .secondCard {
+    max-width: 100%;
+    &__image {
+      width: 200px;
+      height: 300px;
+    }
+    &__descr {
+      margin-top: 40px;
+      &-name {
+        font-size: 19px;
+      }
+      p {
+        font-size: 15.8px;
+      }
+    }
+  }
 }
 @media (max-width: 641px) {
   .nav {
@@ -419,12 +449,76 @@
   .btn__modal {
     width: 50px;
   }
+
+  .managers__title {
+    padding: 40px 0;
+  }
+  .firstCard {
+    max-width: 76%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: start;
+    padding: 40px 20px;
+    margin: 0 auto 0px auto;
+    &__one {
+      &-name {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .firstCard__two {
+    max-width: 100%;
+    margin-top: 30px;
+    font-size: 17px;
+    &-contact {
+      margin: 20px 0;
+    }
+  }
+  .secondCard {
+    max-width: 76%;
+    flex-direction: column;
+    align-items: center;
+    &__image {
+      width: 190px;
+      height: 280px;
+    }
+    &__descr {
+      max-width: 100%;
+      margin-top: 30px;
+      margin-left: 0;
+      text-align: center;
+      &-name {
+        font-size: 19px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
 }
 
 @media (max-width: 578px) {
   .modal-content {
     margin: 0 auto;
     max-width: 480px;
+  }
+  .managers {
+    padding: 0;
+  }
+  .managers__main {
+    padding: 40px 0 0 0;
+  }
+  .firstCard {
+    max-width: 92%;
+  }
+
+  .firstCard__two {
+    font-size: 18px;
+  }
+  .secondCard {
+    max-width: 92%;
   }
 }
 @media (max-width: 480px) {
@@ -503,6 +597,33 @@
   .modal__title {
     font-size: 18px;
   }
+  .firstCard {
+    max-width: 100%;
+  }
+
+  .firstCard__two {
+    font-size: 17px;
+  }
+  .secondCard {
+    max-width: 100%;
+    &__image {
+      width: 180px;
+      height: 260px;
+    }
+    &__descr {
+      margin-top: 20px;
+      &-name {
+        font-size: 17px;
+      }
+      p {
+        font-size: 15px;
+      }
+      &--media {
+        max-width: 150px;
+        margin: 0 auto;
+      }
+    }
+  }
 }
 @media (max-width: 380px) {
   .nav {
@@ -553,5 +674,21 @@
   }
   .modal__title {
     font-size: 15.7px;
+  }
+  .firstCard {
+    &__one {
+      &-photo {
+        width: 100%;
+      }
+      &-name {
+        font-size: 17.6px;
+      }
+      &-job {
+        margin-bottom: 16px;
+      }
+    }
+  }
+  .firstCard__two {
+    margin-top: 0px;
   }
 }

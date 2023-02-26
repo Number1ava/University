@@ -525,6 +525,9 @@ button {
     p {
       margin-bottom: 16px;
     }
+    &--media {
+      max-width: 180px;
+    }
   }
 }
 
