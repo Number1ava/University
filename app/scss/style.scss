@@ -652,4 +652,21 @@ button {
   border-radius: 5px;
   background-color: #004fa5;
 }
+
+// dean.html =============================
+.dean {
+  min-height: 400px;
+  padding: 10px 0px 40px 0px;
+  &__img {
+    max-width: 230px;
+    margin-right: 30px;
+    border-radius: 4px;
+  }
+  &__blocks {
+    max-width: 74%;
+    padding: 30px 20px;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
 @import "media";

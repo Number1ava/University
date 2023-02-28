@@ -127,6 +127,11 @@
     padding: 40px 10px;
     max-width: 100%;
   }
+  .dean {
+    &__img {
+      margin-right: 0px;
+    }
+  }
 }
 @media (min-width: 876px) {
   .nav__link--drop:hover::after {
@@ -495,6 +500,11 @@
       p {
         font-size: 16px;
       }
+    }
+  }
+  .dean {
+    &__img {
+      margin-right: 0px;
     }
   }
 }
