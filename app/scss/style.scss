@@ -262,6 +262,7 @@ h6 {
   &-photo {
     max-width: 440px;
     border-radius: 4px;
+    image-rendering: crisp-edges;
   }
 }
 
