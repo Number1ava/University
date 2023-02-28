@@ -71,6 +71,12 @@ h6 {
   overflow: hidden;
 }
 
+.body__background {
+  background-image: url("../images/main__background.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
 .container__header {
   max-width: 1430px;
   padding: 0 15px;
@@ -92,10 +98,11 @@ h6 {
 .header {
   min-height: 100vh;
   padding-bottom: 40px;
-  background: linear-gradient(180deg, #007aff 0%, #004fa5 58.8%, #003166 100%);
   color: white;
 }
-
+.header__background {
+  background: linear-gradient(180deg, #007aff 0%, #003166 100%);
+}
 .logo {
   font-weight: 700;
   font-size: 24px;
@@ -139,7 +146,8 @@ h6 {
 
 .nav__list--dropdown {
   position: absolute;
-  background: linear-gradient(180deg, #007aff 0%, #004fa5 58.8%, #003166 100%);
+  // background: linear-gradient(180deg, #007aff 0%, #004fa5 58.8%, #003166 100%);
+  background: linear-gradient(314.97deg, #005c91 -16.21%, #06a1c1 71.29%);
   right: 0;
   top: 100%;
   padding: 30px;
@@ -268,7 +276,6 @@ h6 {
 
 .counter {
   min-height: 264px;
-  background-color: #26335d;
   padding: 100px 0 40px 0px;
   &__main {
     display: flex;
@@ -298,7 +305,6 @@ h6 {
 
 .sports {
   min-height: 600px;
-  background-color: #26335d;
   padding-bottom: 50px;
 }
 .card__box {
@@ -375,7 +381,6 @@ button {
 }
 
 .teachers {
-  background-color: #26335d;
   min-height: 540px;
 }
 
@@ -418,17 +423,16 @@ button {
 
 .footer {
   min-height: 200px;
-  background-color: white;
   &__wrapper {
     display: flex;
     padding: 50px 0px;
+    color: white;
   }
   &__content1 {
     max-width: 137px;
     &-title {
       margin-bottom: 25px;
-      color: #1b3053;
-      font-size: 18px;
+      font-size: 20px;
     }
     &-link {
       margin: 10px 0;
