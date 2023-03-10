@@ -101,6 +101,24 @@ document.addEventListener('DOMContentLoaded', () => {
             centerMode: true,
             slidesToShow: 1,
             slidesToScroll: 1,
+            centerPadding: '150px',
+          }
+        },
+        {
+          breakpoint: 620,
+          settings: {
+            centerMode: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            centerPadding: '130px',
+          }
+        },
+        {
+          breakpoint: 580,
+          settings: {
+            centerMode: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
             centerPadding: '120px',
           }
         },
@@ -109,6 +127,15 @@ document.addEventListener('DOMContentLoaded', () => {
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 520,
+          settings: {
+            centerMode: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            centerPadding: '100px',
           }
         },
         {

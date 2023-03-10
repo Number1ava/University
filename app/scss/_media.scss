@@ -102,6 +102,9 @@
       }
     }
   }
+  .teachers__center {
+    text-align: center;
+  }
   .managers__main {
     flex-direction: column;
     align-items: center;
@@ -326,6 +329,11 @@
   }
 }
 
+@media (max-width: 881px) {
+  .person__container-inner {
+    left: 0px;
+  }
+}
 @media (max-width: 782px) {
   .blocks {
     padding: 40px 20px;
@@ -365,6 +373,9 @@
         font-size: 15.8px;
       }
     }
+  }
+  .person__container-inner {
+    left: -40px;
   }
 }
 @media (max-width: 641px) {
@@ -540,6 +551,11 @@
   .secondCard {
     max-width: 92%;
   }
+  .person {
+    &__name {
+      font-size: 18px;
+    }
+  }
 }
 @media (max-width: 480px) {
   .nav {
@@ -608,6 +624,13 @@
         font-size: 18px;
       }
     }
+  }
+  .person__descr {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .person__container-inner {
+    left: 10px;
   }
   .modal__body {
     & p {
@@ -710,5 +733,11 @@
   }
   .firstCard__two {
     margin-top: 0px;
+  }
+  .person__container {
+    margin: 0 auto;
+  }
+  .person__container-inner {
+    left: -40px;
   }
 }
