@@ -258,6 +258,7 @@ h6 {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  overflow-x: hidden;
 }
 .header__text {
   max-width: 462px;
@@ -393,7 +394,7 @@ button {
     text-align: center;
     color: white;
     &__name {
-      font-size: 20px;
+      font-size: 19px;
       margin-bottom: 10px;
       font-weight: bold;
     }

@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('DOMContentLoaded', () => {
   $(window).on('load', function () {
     $('.loader__wrap').delay(600).fadeOut('slow');
     $("html,body").addClass("hidden");
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
     $('.sliders').slick({
       infinite: true,
       arrows: false,
-      speed: 300,
+      speed: 500,
       slidesToShow: 4,
       slidesToScroll: 2,
       autoplay: true,
