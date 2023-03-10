@@ -9,6 +9,7 @@
   "author": "Avaz Khamdamov",
   "license": "ISC",
   "devDependencies": {
+    "animate.css": "^4.1.1",
     "bootstrap": "^4.6.0",
     "browser-sync": "^2.26.13",
     "del": "^6.0.0",
@@ -22,6 +23,7 @@
     "jquery": "^3.6.0",
     "normalize.css": "^8.0.1",
     "sass": "^1.52.1",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "wowjs": "^1.1.3"
   }
 }
