@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   $(window).on('load', function () {
-    $('.loader__wrap').delay(800).fadeOut('slow');
+    $('.loader__wrap').delay(600).fadeOut('slow');
     $("html,body").addClass("hidden");
     setTimeout(function () {
       $("html,body").removeClass("hidden");
