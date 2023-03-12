@@ -75,7 +75,8 @@ window.addEventListener('DOMContentLoaded', () => {
     $('.sliders').slick({
       infinite: true,
       arrows: false,
-      speed: 500,
+      speed: 600,
+      autoplaySpeed: 3000,
       slidesToShow: 4,
       slidesToScroll: 2,
       autoplay: true,

@@ -112,7 +112,7 @@ h6 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 200px !important;
+  margin-bottom: 180px !important;
   padding-top: 20px;
 }
 .nav__list {
@@ -427,7 +427,6 @@ button {
     cursor: pointer;
     height: 380px;
     left: 10px;
-    pointer-events: none;
     position: absolute;
     top: 210px;
     width: 380px;
