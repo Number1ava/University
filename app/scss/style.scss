@@ -33,40 +33,32 @@ h6 {
   margin: 0;
   font-size: inherit;
 }
-
-.spinner {
-  width: 80px;
-  height: 80px;
-  border: 2px solid #f3f3f3;
-  border-top: 3px solid #f25a41;
-  border-radius: 100%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  animation: spin 1s infinite linear;
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .loader {
   height: 100%;
   width: 100%;
-  background: linear-gradient(180deg, #007aff 0%, #003166 100%);
+  background: linear-gradient(180deg, #0b3767 0%, #0a3e76 100%);
   z-index: 36;
   position: fixed;
   left: 0;
   top: 0;
 }
+.spinner {
+  width: 8em;
+  height: 8em;
+  border-top: 1em solid #d5fff7;
+  border-right: 1em solid transparent;
+  animation: spinner 0.4s linear infinite;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 300px;
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .hidden {
   overflow: hidden;
 }

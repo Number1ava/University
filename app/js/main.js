@@ -4,7 +4,7 @@ window.addEventListener('DOMContentLoaded', () => {
     $("html,body").addClass("hidden");
     setTimeout(function () {
       $("html,body").removeClass("hidden");
-    }, 900);
+    }, 800);
   });
 
   // menu__burger
