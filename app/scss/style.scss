@@ -74,6 +74,7 @@ h6 {
   padding: 0 15px;
   margin: 0 auto;
 }
+
 .container {
   max-width: 1240px;
   padding: 0 15px;
@@ -259,11 +260,14 @@ h6 {
   font-size: 22px;
 }
 .header__image {
-  max-width: 480px;
+  max-width: 560px;
   &-photo {
-    max-width: 440px;
+    max-width: 540px;
     border-radius: 4px;
     image-rendering: crisp-edges;
+    &--grass {
+      max-width: 400px;
+    }
   }
 }
 
