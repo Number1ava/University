@@ -43,22 +43,34 @@ h6 {
   top: 0;
 }
 .spinner {
-  width: 10em;
-  height: 10em;
   margin: auto;
   margin-top: 300px;
   animation: spinner 1.4s linear infinite;
   background-image: url("../images/snow__loader.svg");
   background-repeat: no-repeat;
   background-size: contain;
+  width: 160px;
+  height: 160px;
+  animation-name: rotation;
+  animation-duration: 3.4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
-@keyframes spinner {
-  to {
+@keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(720deg);
+    -o-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
-
 .hidden {
   overflow: hidden;
 }
