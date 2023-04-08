@@ -5,11 +5,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Горнолыжный</title>
+  <title>Первый курс</title>
   <link rel="stylesheet" href="css/style.min.css" />
 </head>
 
 <body class="hidden">
+  <div class="loader__wrap" role="alertdialog" aria-busy="true" aria-live="polite" aria-label="Loading…">
+    <div class="loader">
+      <div class="spinner" style="font-size:16px">
+        <div class="head"></div>
+      </div>
+    </div>
+  </div>
   <div class="overlay"></div>
   <header class="header header__background">
     <div class="container__header">
@@ -29,7 +36,6 @@
                   <li class="dropdown-submenu__list-item"><a href="kafedra.html">Кафедра</a></li>
                 </ul>
               </li>
-
             </ul>
           </li>
           <li class="nav__item">
@@ -91,21 +97,22 @@
       <button class="burger" aria-label="Open menu">
         <span></span>
       </button>
-    </div>
-    <div class="container">
       <div class="header__main">
-        <div class="header__text wow animate__animated animate__fadeInLeft animate__slow animate__delay-0.6s">
+        <div class="header__text">
           <h3 class="top__title">Добро Пожаловать!</h3>
           <h1 class="sub__title">Кафедра: теории и методики зимних видов спорта</h1>
         </div>
-        <div class="header__image wow animate__animated animate__fadeInRight animate__slow animate__delay-0.6s">
-          <a href="index.html"><img class="header__image-photo" src="images/gorno__logo.png" alt="image"></a>
+        <div class="header__image">
+          <a href="index.html"><img class="header__image-photo" src="images/TopImage__logo.svg" alt="image"></a>
         </div>
       </div>
     </div>
   </header>
   <main>
-
+    <section class="ScheduleOne">
+      <embed class="ScheduleOne__lesson" src="files/II-kurs 2022-2023. (2)-10.pdf" type="application/pdf">
+      <embed class="ScheduleOne__lesson" src="files/II-kurs 2022-2023. (2)-8.pdf" type="application/pdf">
+    </section>
   </main>
   <footer class="footer footer__secondBg">
     <div class="container">
@@ -126,6 +133,5 @@
   </footer>
 </body>
 <script src="js/main.min.js"></script>
-<script>new WOW().init();</script>
 
 </html>

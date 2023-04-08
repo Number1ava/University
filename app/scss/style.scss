@@ -117,7 +117,7 @@ h6 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 180px !important;
+  margin-bottom: 100px !important;
   padding-top: 20px;
 }
 .nav__list {
@@ -265,16 +265,20 @@ h6 {
   align-items: center;
 }
 .header__text {
-  max-width: 462px;
+  max-width: 400px;
 }
 .top__title {
   font-size: 22px;
 }
+.sub__title {
+  font-size: 24px;
+}
 .header__image {
   max-width: 560px;
   &-photo {
-    max-width: 540px;
+    max-width: 560px;
     border-radius: 4px;
+    margin-bottom: 140px;
     &--Mainlogo {
       max-width: 420px;
     }
@@ -708,6 +712,20 @@ button {
     padding: 30px 20px;
     justify-content: space-evenly;
     align-items: center;
+  }
+}
+
+//  first__course
+.ScheduleOne {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  &__lesson {
+    width: 80%;
+    height: 600px;
+    margin: 0 auto;
+    padding: 40px 0;
+    margin: 0px auto;
   }
 }
 @import "media";
