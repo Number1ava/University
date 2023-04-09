@@ -761,4 +761,46 @@ button {
   }
 }
 
+// order.html
+.orders {
+  min-height: 400px;
+  padding: 20px 0px 40px 0px;
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 540px;
+    min-height: 220px;
+    margin: 20px 0;
+    padding: 24px;
+    border-radius: 10px;
+    font-size: 17px;
+    color: white;
+    background: linear-gradient(180deg, #007aff 0%, #004fa5 58.8%, #003166 100%);
+  }
+  &__link {
+    display: block;
+    width: 140px;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    color: #004fa5;
+    background-color: white;
+    transition: all ease 0.5s;
+    &:hover {
+      color: white;
+      background: orange;
+    }
+  }
+}
+
 @import "media";
