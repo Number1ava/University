@@ -719,15 +719,4 @@ button {
   }
 }
 
-//  first__course
-.ScheduleOne {
-  margin: 0 auto;
-  &__lesson {
-    min-width: 100%;
-    height: 680px;
-    margin: 0 auto;
-    padding: 40px 0;
-    margin: 0px auto;
-  }
-}
 @import "media";
