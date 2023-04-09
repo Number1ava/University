@@ -215,7 +215,6 @@ window.addEventListener('DOMContentLoaded', () => {
           breakpoint: 520,
           settings: {
             centerMode: true,
-
             slidesToShow: 1,
             slidesToScroll: 1,
           }
@@ -223,9 +222,26 @@ window.addEventListener('DOMContentLoaded', () => {
         {
           breakpoint: 481,
           settings: {
+            centerMode: true,
+            centerPadding: '40px',
             slidesToShow: 1,
             slidesToScroll: 1,
-            centerPadding: '40px',
+          }
+        },
+        {
+          breakpoint: 430,
+          settings: {
+            centerMode: true,
+            centerPadding: '20px',
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 380,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
           }
         }
       ]

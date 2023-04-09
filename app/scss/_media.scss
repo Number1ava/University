@@ -541,6 +541,14 @@
       margin-right: 0px;
     }
   }
+  .hockey {
+    &__image5 {
+      & > img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
 }
 
 @media (max-width: 578px) {
