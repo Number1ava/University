@@ -7,7 +7,7 @@
   }
   .header__image {
     &-photo {
-      max-width: 440px;
+      max-width: 600px;
     }
   }
 }
@@ -72,7 +72,7 @@
       max-width: 100%;
       margin-bottom: 0px;
       &-photo {
-        max-width: 380px;
+        max-width: 600px;
         border-radius: 4px;
       }
     }
@@ -178,9 +178,6 @@
     }
     &__image {
       margin-bottom: 80px;
-      &-photo {
-        max-width: 420px;
-      }
     }
   }
 
@@ -370,6 +367,14 @@
       max-width: 72%;
     }
   }
+  .books__MainSkiing {
+    justify-content: space-between;
+    max-width: 660px;
+    margin: 0 auto 40px auto;
+  }
+  .books__skiing {
+    margin: 0px 20px 20px 20px;
+  }
 }
 
 @media (max-width: 881px) {
@@ -439,7 +444,7 @@
     &__image {
       margin-bottom: 80px;
       &-photo {
-        max-width: 380px;
+        max-width: 450px;
       }
     }
   }
@@ -620,6 +625,13 @@
       max-width: 100%;
     }
   }
+  .header__image {
+    &-photo {
+      &--grass {
+        max-width: 380px;
+      }
+    }
+  }
 }
 @media (max-width: 480px) {
   .nav {
@@ -643,13 +655,16 @@
     .top__title {
       font-size: 22px;
     }
+    .sup__title {
+      font-size: 24px;
+    }
     .sub__title {
-      font-size: 25px;
+      font-size: 22px;
     }
     &__image {
       margin-bottom: 60px;
       &-photo {
-        max-width: 280px;
+        max-width: 348px;
       }
     }
   }
@@ -731,6 +746,9 @@
       }
     }
   }
+  .managers__title {
+    padding: 0px 0;
+  }
   .orders {
     &__item {
       font-size: 16px;
@@ -740,6 +758,17 @@
       font-size: 15px;
     }
   }
+  .books__MainSkiing {
+    justify-content: center;
+    margin: 0 auto 40px auto;
+  }
+  .books__skiing {
+    margin: 0px 0px 30px 0px;
+  }
+  .books__skiing > img {
+    width: 270px;
+    height: 290px;
+  }
 }
 @media (max-width: 380px) {
   .nav {
@@ -748,13 +777,18 @@
 
   .header {
     &__text {
-      max-width: 96%;
+      max-width: 100%;
     }
     .top__title {
       font-size: 20px;
     }
-    .sub__title {
-      font-size: 23px;
+    .sup__title {
+      font-size: 22px;
+    }
+    &__image {
+      &-photo {
+        max-width: 284px;
+      }
     }
   }
 
