@@ -150,6 +150,88 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  $(function () {
+    $('.sliders_hockey').slick({
+      infinite: true,
+      arrows: false,
+      speed: 600,
+      autoplaySpeed: 3000,
+      slidesToShow: 4,
+      slidesToScroll: 2,
+      autoplay: true,
+      responsive: [
+        {
+          breakpoint: 1145,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 2,
+          }
+        },
+        {
+          breakpoint: 881,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 641,
+          settings: {
+            dots: false,
+            centerMode: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            centerPadding: '150px',
+          }
+        },
+        {
+          breakpoint: 620,
+          settings: {
+            centerMode: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            centerPadding: '130px',
+          }
+        },
+        {
+          breakpoint: 580,
+          settings: {
+            centerMode: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            centerPadding: '100px',
+          }
+        },
+        {
+          breakpoint: 552,
+          settings: {
+            centerMode: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            centerPadding: '80px',
+          }
+        },
+        {
+          breakpoint: 520,
+          settings: {
+            centerMode: true,
+
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 481,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            centerPadding: '40px',
+          }
+        }
+      ]
+    });
+  });
+
 
   // burger menu
   function burgerMenu(selector) {
