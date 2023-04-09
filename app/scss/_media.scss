@@ -237,6 +237,11 @@
     position: relative;
     top: 6px;
   }
+  .nav__link-media {
+    text-align: center;
+    display: inline-block;
+    margin: 6px 0px 14px 30px;
+  }
 
   .nav__list--dropdown {
     position: absolute;

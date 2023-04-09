@@ -79,7 +79,7 @@ h6 {
   background-image: url("../images/main__background.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center 10%;
 }
 .container__header {
   max-width: 1430px;
@@ -117,7 +117,7 @@ h6 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 100px !important;
+  margin-bottom: 160px !important;
   padding-top: 20px;
 }
 .nav__list {
@@ -265,22 +265,22 @@ h6 {
   align-items: center;
 }
 .header__text {
-  max-width: 400px;
+  max-width: 460px;
 }
 .top__title {
-  font-size: 22px;
+  font-size: 26px;
 }
 .sub__title {
-  font-size: 24px;
+  font-size: 28px;
 }
 .header__image {
   max-width: 560px;
   &-photo {
-    max-width: 560px;
+    max-width: 448px;
     border-radius: 4px;
     margin-bottom: 140px;
     &--Mainlogo {
-      max-width: 420px;
+      max-width: 500px;
     }
     &--grass {
       max-width: 400px;
@@ -303,16 +303,19 @@ h6 {
       text-align: center;
       border-radius: 6px;
       background-color: white;
+      transform: skew(-16deg);
     }
     &-count {
       font-size: 40px;
       font-weight: bold;
       text-align: center;
       color: #2d9cdb;
+      transform: skew(16deg);
     }
     &-text {
       font-size: 17px;
       font-weight: bold;
+      transform: skew(16deg);
     }
   }
 }
@@ -345,6 +348,7 @@ h6 {
     position: absolute;
     top: 0;
     right: 0;
+    border-top-right-radius: 5px;
     border: 20px solid transparent;
     border-top: 20px solid #0061ff;
     border-right: 20px solid #0061ff;
@@ -462,7 +466,7 @@ button {
 .footer {
   min-height: 200px;
   background: linear-gradient(88.32deg, #005c91 53.85%, #00b4d6 128.67%);
-  border-radius: 30px 30px 0px 0px;
+  border-radius: 20px 20px 0px 0px;
   &__wrapper {
     display: flex;
     padding: 50px 0px;
@@ -717,12 +721,10 @@ button {
 
 //  first__course
 .ScheduleOne {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  margin: 0 auto;
   &__lesson {
-    width: 80%;
-    height: 600px;
+    min-width: 100%;
+    height: 680px;
     margin: 0 auto;
     padding: 40px 0;
     margin: 0px auto;

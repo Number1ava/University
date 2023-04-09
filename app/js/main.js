@@ -149,6 +149,8 @@ window.addEventListener('DOMContentLoaded', () => {
       ]
     });
   });
+
+
   // burger menu
   function burgerMenu(selector) {
     let menu = $(selector);
