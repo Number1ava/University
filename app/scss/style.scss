@@ -81,6 +81,7 @@ h6 {
   background-repeat: no-repeat;
   background-position: center 10%;
 }
+
 .container__header {
   max-width: 1430px;
   padding: 0 30px;
@@ -799,6 +800,23 @@ button {
     &:hover {
       color: white;
       background: orange;
+    }
+  }
+}
+
+// resources
+.resources {
+  min-height: 400px;
+  padding: 20px 0px 40px 0px;
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px;
+    & > iframe {
+      margin-bottom: 40px;
     }
   }
 }

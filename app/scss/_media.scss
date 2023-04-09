@@ -26,6 +26,13 @@
       margin: 0 auto;
     }
   }
+  .resources {
+    &__main {
+      justify-content: space-evenly;
+      max-width: 560px;
+      margin: 0 auto;
+    }
+  }
 }
 @media (max-width: 1146px) {
   .orders {
